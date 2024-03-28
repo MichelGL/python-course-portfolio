@@ -26,7 +26,7 @@ class Job(TimeStampMixin):
     elaborate_description = RichTextUploadingField(
         verbose_name="Подробное описание",
         help_text="Подробное описание выполненной работы",
-        default='Подробное описание работы'
+        default="Подробное описание работы",
     )
 
     class Meta:

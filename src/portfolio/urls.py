@@ -30,5 +30,6 @@ urlpatterns = [
     path("", IndexJobsListView.as_view(), name="home"),
     path("blog/", include("blog.urls")),
     path("job/", include("jobs.urls")),
+    path("author/", include("author.urls")),
 ]
 urlpatterns.extend(static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT))

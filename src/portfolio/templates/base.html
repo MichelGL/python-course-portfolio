@@ -33,14 +33,7 @@
               Напишите мне для консультации.
           </p>
         </div>
-        <div class="col-sm-4 offset-md-1 py-4">
-          <h4 class="text-white">Мои контакты</h4>
-          <ul class="list-unstyled">
-            <li><a href="#" class="text-white">Резюме</a></li>
-            <li><a href="https://github.com" target="_blank" class="text-white">GitHub</a></li>
-            <li><a href="mailto:username(att)somemailserver(dott)com" class="text-white">Email</a></li>
-          </ul>
-        </div>
+        <div class="col-sm-4 offset-md-1 py-4" id="author_details"></div>
       </div>
     </div>
   </div>
@@ -75,5 +68,10 @@
 <script src="{% static 'library/jquery/3.6.1/jquery-3.6.1.min.js' %}"></script>
 <script src="{% static 'library/bootstrap/5.2.1/js/bootstrap.min.js' %}"></script>
 <script src="{% static 'library/jquery/jquery.email-antispam.js' %}"></script>
+<script>
+    $(function () {
+        $("#author_details").load("/author");
+    });
+</script>
 </body>
 </html>
